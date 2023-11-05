@@ -1,2 +1,2 @@
 # ITMO-WEB
-Сайт: ITMO-WEB/index.html
+Ссылка на [сайт](ITMO-WEB/index.html)
