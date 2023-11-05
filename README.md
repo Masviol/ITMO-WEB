@@ -1,2 +1,2 @@
 # ITMO-WEB
-Сайт: index.html
+Сайт: ITMO-WEB/index.html
