@@ -151,4 +151,5 @@ footer {
 .postMenu li { 
     list-style-type: none;
     margin: 20px;
+    padding: 0;
 }
