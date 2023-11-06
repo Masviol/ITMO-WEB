@@ -174,8 +174,8 @@ footer {
     color: lightgrey;
 }
 
-.menu-item.active { 
-    background-color: white;
+nav li:active { 
+    background-color: black;
 }
 
 blockquote { 
