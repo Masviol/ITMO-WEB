@@ -38,6 +38,7 @@ header ul {
 
 .menu li a {
     text-decoration: none;
+    font-size: 1rem;
 }
 
 main { 
@@ -62,7 +63,7 @@ main {
 
 .productW { 
     font-weight: 700;
-    font-size: 48px;
+    font-size: 3rem;
     color: white;
     margin: 0;
     
@@ -70,28 +71,28 @@ main {
 
 .taglineW { 
     font-weight: 100;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: white;
     margin: 9px 0;
 }
 
 .productB { 
     font-weight: 700;
-    font-size: 48px;
+    font-size: 3rem;
     color: black;
     margin: 0;
 }
 
 .taglineB { 
     font-weight: 100;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: black;
     margin: 9px 0;
 }
 
 .learnMore { 
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #4F75FF;
     text-decoration: none;
 }
@@ -153,7 +154,7 @@ footer {
 }
 
 .postMenu li a { 
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 100;
     color: black;
 }
@@ -164,8 +165,9 @@ footer {
     padding: 0;
 }
 
-.menu-item:hover { 
+.menu-item a:hover { 
     text-decoration: underline;
+    color: lightgrey;
 }
 
 .menu-item.active { 
