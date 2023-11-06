@@ -163,3 +163,11 @@ footer {
     margin: 20px;
     padding: 0;
 }
+
+.menu-item:hover { 
+    text-decoration: underline;
+}
+
+.menu-item.active { 
+    background-color: white;
+}
