@@ -1,0 +1,32 @@
+h1 { 
+    color: white;
+    margin-top: 10px;
+    padding: 0;
+    text-align: center ;
+}
+
+.product { 
+    display: block;
+    margin: 66px auto;
+    padding: 0;
+    position: relative;
+
+}
+
+.description { 
+    color: lightgray;
+    margin: 0;
+}
+
+.subtitle { 
+    color: rgb(73, 73, 73)
+}
+
+ .honest th { 
+    font-weight: 700;
+    background: lightgray;
+}
+.honest td { 
+    font-weight: 700;
+    background: lightgray;
+}
