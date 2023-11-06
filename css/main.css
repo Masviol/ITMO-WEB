@@ -95,6 +95,8 @@ main {
     font-size: 1.125rem;
     color: #4F75FF;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 .sonya7r { 
@@ -102,7 +104,7 @@ main {
     margin: 0 auto;
     padding: 0;
     position: relative;
-    top: -70px;
+    top: 30px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -116,18 +118,17 @@ main {
 }
 
 .sonyfe50mm { 
-    width: 854px;
-    height: 854px;
+    width: 600px;
     display: block;
     margin: 0 auto;
     padding: 0;
     position: relative;
-    top: -140px;
+    top: -35px;
 }
 
 footer { 
     width: auto;
-    height: auto;
+    height: 107px;
     background: gray;
     margin: 0;
     margin-bottom: 0;
@@ -138,19 +139,22 @@ footer {
 
 .logo { 
     width: 53px;
-    height: 57px;
+    margin: 0;
+    padding: 0;
 }
 
 .foot { 
     display: flex;
     align-items: center;
     margin: 0 auto;
+    padding: 0;
 }
 
 .postMenu { 
     display: flex;
     align-items: center;
     align-self: center;
+    padding: 0;
 }
 
 .postMenu li a { 
@@ -172,4 +176,8 @@ footer {
 
 .menu-item.active { 
     background-color: white;
+}
+
+blockquote { 
+    font-style: oblique;
 }
