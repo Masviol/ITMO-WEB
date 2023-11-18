@@ -129,7 +129,7 @@ main {
 footer { 
     width: auto;
     height: 107px;
-    background: gray;
+    background: rgb(229, 229, 229);
     margin: 0;
     margin-bottom: 0;
     padding: 0;
@@ -174,8 +174,8 @@ footer {
     color: lightgrey;
 }
 
-.menu-item.active { 
-    background-color: white;
+nav li:active { 
+    background-color: black;
 }
 
 blockquote { 
