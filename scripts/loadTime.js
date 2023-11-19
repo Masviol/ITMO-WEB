@@ -8,8 +8,10 @@
     function displayLoadTime(){
         const loadTime = measureLoadTime();
         const ul = document.querySelector('ul.postMenu')
+        let a = document.createElement("a");
+        a.innerHTML = `Время загрузки: ${loadTime} мс`;
         let li = document.createElement("li");
-        li.innerHTML = `Время загрузки: ${loadTime} мс`;
+        li.append(a);
         ul.append(li);
     }
     window.addEventListener('load', displayLoadTime);
