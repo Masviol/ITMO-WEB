@@ -68,13 +68,13 @@ h2 {
     font-weight: lighter;
 }
 
-#todo-item {
+.todo-item {
     display: flex;
     justify-content: space-between;
     padding: 15px 2%;
 }
 
-#todo-item button { 
+.todo-item button { 
     background: black;
     font-family: 'Comfortaa';
     font-size: 0.7rem;
@@ -88,7 +88,7 @@ h2 {
 }
 
 
-#todo-item button:hover { 
+.todo-item button:hover { 
     background: green;
     transform: scale(1.2);
 }
