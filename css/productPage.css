@@ -22,11 +22,19 @@ h1 {
     color: rgb(73, 73, 73)
 }
 
- .honest th { 
-    font-weight: 700;
-    background: lightgray;
+table { 
+    margin-top: 15px;
 }
-.honest td { 
+
+table tr th { 
+    padding: 5px;
+}
+
+table tr td { 
+    padding: 5px;
+}
+
+ .honest { 
     font-weight: 700;
     background: lightgray;
 }
