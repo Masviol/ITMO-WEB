@@ -23,15 +23,23 @@ h1 {
 }
 
 table { 
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     margin-top: 15px;
+    width: 100%;
+    border-collapse: collapse;
 }
 
-table tr th { 
-    padding: 5px;
+@media (max-width: 600px) {
+    table {
+        grid-template-columns: 1fr;
+    }
 }
 
-table tr td { 
-    padding: 5px;
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
 }
 
  .honest { 
