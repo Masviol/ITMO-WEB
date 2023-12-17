@@ -7,7 +7,7 @@
 
     function displayLoadTime(){
         const loadTime = measureLoadTime();
-        const ul = document.querySelector('ul.postMenu')
+        const ul = document.querySelector('ul.footer__menu')
         let a = document.createElement("a");
         a.innerHTML = `Время загрузки: ${loadTime} мс`;
         let li = document.createElement("li");

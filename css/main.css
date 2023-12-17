@@ -15,7 +15,6 @@ body {
 }
 
 header { 
-    height: 30px;
     background: rgb(79, 79 ,79);
     box-sizing: border-box;
     display: flex;
@@ -28,6 +27,7 @@ header .logo {
     font-size: 1.2rem;
     color: white;
     transition: .2s;
+    margin-right: 15px;
 }
 
 header .logo:hover { 
@@ -76,7 +76,7 @@ main {
 
 .blockBlack { 
     width: auto;
-    height: 790px;
+    height: 80%;
     background: black;
     margin: 0;
     padding: 40px;
@@ -84,13 +84,13 @@ main {
 
 .blockWhite { 
     width: auto;
-    height: 790px;
+    height: 80%;
     background: white;
     margin: 0;
     padding: 40px;
 }
 
-.productW { 
+.blockBlack__productName { 
     font-weight: 700;
     font-size: 3rem;
     color: white;
@@ -98,21 +98,21 @@ main {
     
 }
 
-.taglineW { 
+.blockBlack__tagline { 
     font-weight: 100;
     font-size: 1.5rem;
     color: white;
     margin: 9px 0;
 }
 
-.productB { 
+.blockWhite__productName { 
     font-weight: 700;
     font-size: 3rem;
     color: black;
     margin: 0;
 }
 
-.taglineB { 
+.blockWhite__tagline { 
     font-weight: 100;
     font-size: 1.5rem;
     color: black;
@@ -130,26 +130,23 @@ main {
 
 .sonya7r { 
     display: block;
-    margin: 0 auto;
+    margin: auto;
     padding: 0;
     position: relative;
+    align-items: center;
     top: 30px;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 1000px) {
     .sonya7r { 
-        display: block;
-        margin: 0 auto;
-        padding: 0;
-        position: relative;
-        top: 20px;
+        width: 814px;
     }
 }
 
 .sonyfe50mm { 
-    width: 600px;
+    width: 50%;
     display: block;
-    margin: 0 auto;
+    margin: auto;
     padding: 0;
     position: relative;
     top: -35px;
@@ -166,7 +163,7 @@ footer {
     align-items: center;
 }
 
-.logo { 
+.menu__logo { 
     width: 53px;
     margin: 0;
     padding: 0;

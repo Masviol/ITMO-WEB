@@ -1,4 +1,4 @@
-h1 { 
+.blockBlack__title { 
     color: white;
     margin-top: 10px;
     padding: 0;
@@ -13,12 +13,12 @@ h1 {
 
 }
 
-.description { 
+.blockBlack__description { 
     color: lightgray;
     margin: 0;
 }
 
-.subtitle { 
+.blockWhite__subtitle { 
     color: rgb(73, 73, 73)
 }
 
@@ -36,13 +36,14 @@ table {
     }
 }
 
+
 th, td {
     padding: 10px;
     border: 1px solid #ddd;
     text-align: left;
 }
 
- .honest { 
+ .table__honest { 
     font-weight: 700;
     background: lightgray;
 }
