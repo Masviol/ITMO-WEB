@@ -30,6 +30,22 @@ table {
     border-collapse: collapse;
 }
 
+.table-white { 
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 15px;
+    width: 100%;
+    border-collapse: collapse;
+    border-color: white;
+    color: white;
+}
+
+.table-white .table__honest { 
+    font-weight: 700;
+    color: black;
+    background: #383838;
+}
+
 @media (max-width: 600px) {
     table {
         grid-template-columns: 1fr;
@@ -46,4 +62,19 @@ th, td {
  .table__honest { 
     font-weight: 700;
     background: lightgray;
+}
+
+.blockBlack__preview {
+    color: white;
+    text-align: center;
+    justify-self: center;
+}
+
+.blockBlack__preview h2 { 
+    margin: 10%;
+}
+
+.content img { 
+    width: 60%;
+    margin: 5% auto
 }
