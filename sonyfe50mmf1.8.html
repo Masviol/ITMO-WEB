@@ -9,11 +9,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/productPage.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="scripts\swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+    
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+    
+        .swiper {
+          width: 250px;
+          height: 300px;
+          padding: 50px;
+        }
+    
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 250px;
+          height: 300px;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+        }
+        p {
+          font-size: 1vh, 1vw;
+          margin: 10px;
+        }
+      </style>
 </head>
 <body>
     <header>
@@ -39,18 +75,16 @@
     <main>
         <section class="blockWhite">
             <h1 class="tblockWhite__title">Объектив Sony <sub>FE</sub> 50mm F/1.8</h1>
-
-             <div class="swiper">
+<!-- Swiper carousel container -->
+            <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img class="product" src="img\sony fe50mm.png" alt="sony fe50mm"></div>
-                    <div class="swiper-slide"><img class="product" src="img\sony fe50mm2.jpg" alt="sony fe50mm"></div>
+                <!-- Swiper slides with images and corresponding text -->
+                <div class="swiper-slide">
+                    <img src="img/sony fe50mm.png" />
                 </div>
-
-                    <div class="swiper-pagination"></div>
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>  
-            </div>
+                <div class="swiper-slide">
+                    <img src="img/sony fe50mm2.jpg" />
+                </div>
             <script src="scripts/loadTime.js"></script>
             <p class="blockWhite__description">Бокэ, оно и в Африке бокэ</p>
             <blockquote class="blockWhite__description" cite="https://citaty.info/topic/videokamera">
