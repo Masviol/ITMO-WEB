@@ -64,7 +64,7 @@ function doneTask() {
         const parentNode = event.target.closest('.todo-item');
         parentNode.classList.add('todo-item--done');
 
-        const id = Number(parentNode.id);
+        const id = parentNode.id;
         const task = tasks.find(function (task) {
             if (task.id === id) {
                 return true;
