@@ -24,15 +24,13 @@
 
 table { 
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: minmax(150px, 1.33fr) minmax(150px, 2.33fr);
     margin-top: 15px;
     width: 100%;
     border-collapse: collapse;
 }
 
 .table-white { 
-    display: grid;
-    grid-template-columns: 1fr 2fr;
     margin-top: 15px;
     width: 100%;
     border-collapse: collapse;
