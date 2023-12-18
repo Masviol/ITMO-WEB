@@ -7,11 +7,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/todo.css">
-    <title>Todo List</title>
+    <title>Todo list</title>
 </head>
 <body>
+    <header>
+        <a class="logo" href="index.html"><strong>NiceShot</strong></a>
+        <nav>
+            <ul>
+                <li><a href="#">Камеры</a>
+                    <ul>
+                        <li><a href="sonya7r.html">A7<sub>R</sub></a></li>
+                        <li><a href="#">A7</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Объективы</a>
+                    <ul>
+                        <li><a href="sonyfe50mmf1.8.html">FE 50mm</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Свет</a></li>
+                <li><a href="#">Аксессуары</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-
     <h1>Todo List</h1>
 
     <form id="form">
@@ -19,13 +38,22 @@
         <button type="submit">Добавить</button>
     </form>
 
-    <div class="todo-list">
-        <h2> Список дел</h2>
-        <!-- <div id="todo-item" class="todo-item">
+    <section class="todo-list">
+        <div class="todo-list__grayPanel">
+            <h2> Список дел</h2>
+        </div>
+
+        <div class="todo-list__empty">
+            Пусто
+        </div>
+        <!--<div id="todo-item" class="todo-item--done">
             дело
-        <button type="button" data-action="done">Done</button>
-        </div> -->
-    </div>
+            <div class="todo-item__buttons">
+            <button class="buttons__delete_button" type="button" data-action="delete">Удалить</button>
+            <button class="buttons__done_button" type="button" data-action="done">Готово</button>
+            </div>
+        </div>-->
+    </section>
     <script src="scripts/todo.js"></script>
     </main>
 </body>

@@ -1,4 +1,4 @@
-h1 { 
+.blockBlack__title { 
     color: white;
     margin-top: 10px;
     padding: 0;
@@ -13,28 +13,68 @@ h1 {
 
 }
 
-.description { 
+.blockBlack__description { 
     color: lightgray;
     margin: 0;
 }
 
-.subtitle { 
+.blockWhite__subtitle { 
     color: rgb(73, 73, 73)
 }
 
 table { 
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     margin-top: 15px;
+    width: 100%;
+    border-collapse: collapse;
 }
 
-table tr th { 
-    padding: 5px;
+.table-white { 
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 15px;
+    width: 100%;
+    border-collapse: collapse;
+    border-color: white;
+    color: white;
 }
 
-table tr td { 
-    padding: 5px;
+.table-white .table__honest { 
+    font-weight: 700;
+    color: black;
+    background: #383838;
 }
 
- .honest { 
+@media (max-width: 600px) {
+    table {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+ .table__honest { 
     font-weight: 700;
     background: lightgray;
+}
+
+.blockBlack__preview {
+    color: white;
+    text-align: center;
+    justify-self: center;
+}
+
+.blockBlack__preview h2 { 
+    margin: 10%;
+}
+
+.content img { 
+    width: 60%;
+    margin: 5% auto
 }

@@ -1,5 +1,5 @@
 body { 
-    background: black;
+    background: #3c3d4d;
     font-family: 'Comfortaa';
     margin: 0;
     padding: 0;
@@ -24,25 +24,25 @@ form {
 
 input {
     width: 90%;
-    background-color: white;
-    color: black;
+    background-color: #adadad;
+    color: 3c3d4d;
     padding: 10px;
-
-
     margin-bottom: 21.440px;
     font-size: 1.5rem;
     font-family: 'Comfortaa';
     border-radius: 15px;   
+    border-style: solid;
+    border-color: #575757;
 }
 
 form button {
-    background: black;
+    background: #adadad;
     font-family: 'Comfortaa';
     font-size: 1rem;
     font-weight: bolder;
-    color: white;
+    color: #3c3d4d;
     padding: 10px;
-    border: 2px solid;
+    border-style: none;
     border-radius: 15px;
     cursor: pointer;
     transition: .2s;
@@ -52,43 +52,87 @@ button:hover {
     transform: scale(1.2);
 }
 
-div { 
+section { 
     margin: 21.440px auto;
+    padding-bottom: 15px;
     width: 90%;
     text-align: center;
+    background-color: black;
     color: white;
     font-size: 1.5rem;
-    padding: 1px;
-    border: 2px solid;
     border-radius: 15px;
+}
+
+.todo-list__grayPanel { 
+    background-color: #1f1f1f;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 12px;
 }
 
 h2 { 
     font-size: 1.5rem;
     font-weight: lighter;
+    margin: 0;
 }
+
+.todo-list__empty {
+    justify-content: space-between;
+    text-align: center;
+    padding: 24px 2%;
+    margin: 15px;
+    margin-bottom: 0;
+    border-color: #adadad;
+}
+
+.none {
+    display: none !important;
+  }
+  
 
 .todo-item {
     display: flex;
     justify-content: space-between;
-    padding: 15px 2%;
+    padding: 24px 2%;
+    margin: 15px;
+    margin-bottom: 0;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #adadad;
 }
 
-.todo-item button { 
-    background: black;
+.todo-item--done {
+    opacity: 0.5;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 2%;
+    margin: 15px;
+    margin-bottom: 0;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #adadad;
+    transition: 1s;
+}
+
+.todo-item__buttons button { 
+    background: #adadad;
     font-family: 'Comfortaa';
     font-size: 0.7rem;
     font-weight: bolder;
-    color: white;
+    color: #3c3d4d;
     padding: 10px;
-    border: 2px solid;
     border-radius: 15px;
     cursor: pointer;
     transition: .2s;
 }
 
 
-.todo-item button:hover { 
+.buttons__done_button:hover { 
     background: green;
+    transform: scale(1.2);
+}
+
+.buttons__delete_button:hover { 
+    background: red;
     transform: scale(1.2);
 }
