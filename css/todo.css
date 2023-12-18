@@ -24,6 +24,8 @@ form {
 
 input {
     width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     background-color: #adadad;
     color: 3c3d4d;
     padding: 10px;
@@ -89,7 +91,6 @@ h2 {
     display: none !important;
   }
   
-
 .todo-item {
     display: flex;
     justify-content: space-between;
