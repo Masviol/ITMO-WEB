@@ -90,7 +90,6 @@ function renderTask(task) {
 
     const cssClass = task.done ? 'todo-item--done' : 'todo-item';
     const template = document.getElementById('tmpHTML');
-
     const taskDiv = template.content.firstElementChild.cloneNode(true);
     console.log(taskDiv)
     taskDiv.classList.add(cssClass);
@@ -98,7 +97,6 @@ function renderTask(task) {
     const taskText = taskDiv.querySelector('p');
     console.log(taskText);
     taskText.textContent = task.text;
-
     todolist.appendChild(taskDiv);
 }
 
