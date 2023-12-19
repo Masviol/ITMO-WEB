@@ -31,24 +31,32 @@ table {
     font-weight: 100;
 }
 
+td { 
+    text-align: center;
+}
+
 table thead, tbody, tr {
     display: contents;
 }
 
+table td, table th { 
+    border: 1px solid black;
+}
+
 .table__honest th{ 
     font-weight: 700;
-    background-color: #383838;
+    background-color: #606060;
 }
 
 .table__honest td{ 
     font-weight: 700;
-    background-color: #383838;
+    background-color: #606060;
 }
 
 .table-white { 
     margin-top: 15px;
     border-collapse: collapse;
-    border-color: white;
+
     color: white;
 }
 
@@ -58,6 +66,9 @@ table thead, tbody, tr {
     background: #383838;
 }
 
+.table-white th, .table-white td { 
+    border: 1px solid white;
+}
 /* th, td {
     padding: 10px;
     border: 1px solid #ddd;
