@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function fetchData() { 
         const randomFilter = Math.random() < 0.5 ? 'id_gte=100' : 'id_gte=200';
-        const apiUrl = `https://jsonplaceholder.typicode.com/photos?${randomFilter}`;
+        const apiUrl = `https://jsonplaceholder.typicode.com/photos?${randomFilter}&_limit=5`;
         return fetch(apiUrl)
             .then(response => { 
                 if(!response.ok) {

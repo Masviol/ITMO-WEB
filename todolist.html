@@ -26,13 +26,26 @@
         <div class="todo-list__empty">
             Пусто
         </div>
-        <!--<div id="todo-item" class="todo-item--done">
-            дело
+
+        <template id="tmpHTML">
+            <div id="todo-item" class="todo-item">
+                <p></p>
+                <div class="todo-item__buttons">
+                    <button class="buttons__delete_button" type="button" data-action="delete">Удалить</button>
+                    <button class="buttons__done_button" type="button" data-action="done">Готово</button>
+                </div>
+            </div>
+        </template>
+
+        <!--
+        <div id="todo-item" class="todo-item--done">
+            <p></p>
             <div class="todo-item__buttons">
             <button class="buttons__delete_button" type="button" data-action="delete">Удалить</button>
             <button class="buttons__done_button" type="button" data-action="done">Готово</button>
-            </div>
-        </div>-->
+        </div>
+        -->
+        </div>
     </section>
     <script src="scripts/todo.js"></script>
     </main>
