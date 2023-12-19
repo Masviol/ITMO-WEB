@@ -1,0 +1,46 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 30%;
+  height: 500px;
+  padding: 50px;
+  margin-bottom: 30px;
+}
+
+.swiper-slide img { 
+  display: block;
+  width: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: flex;
+  width: 100%;
+}
+
+.swiper-button-prev {
+  color: black;
+}
+
+.swiper-button-next {
+  color: black;
+}

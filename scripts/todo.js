@@ -64,7 +64,7 @@ function doneTask() {
         const parentNode = event.target.closest('.todo-item');
         parentNode.classList.add('todo-item--done');
 
-        const id = Number(parentNode.id);
+        const id = parentNode.id;
         const task = tasks.find(function (task) {
             if (task.id === id) {
                 return true;
@@ -77,7 +77,7 @@ function doneTask() {
 }
 
 function checkEmtyList() {
-    if (todolist.children.length > 2) {
+    if (todolist.children.length > 3) {
         emptyList.classList.add('none')
     } else emptyList.classList.remove('none')
 }
@@ -87,18 +87,34 @@ function saveToLocalStorage() {
 }
 
 function renderTask(task) {
-    const cssClass = task.done ? 'todo-item--done' : 'todo-item'
-    const taskHTML = `
-    <div id="${task.id}" class="${cssClass}">
-        ${task.text}
-        <div class="todo-item__buttons">
-        <button class="buttons__delete_button" type="button" data-action="delete">Удалить</button>
-        <button class="buttons__done_button" type="button" data-action="done">Готово</button>
-        </div>
-    </div>
-`;
-    todolist.insertAdjacentHTML("beforeend", taskHTML);
+
+    const cssClass = task.done ? 'todo-item--done' : 'todo-item';
+    const template = document.getElementById('tmpHTML');
+
+    const taskDiv = template.content.firstElementChild.cloneNode(true);
+    console.log(taskDiv)
+    taskDiv.classList.add(cssClass);
+    taskDiv.id = task.id;
+    const taskText = taskDiv.querySelector('p');
+    console.log(taskText);
+    taskText.textContent = task.text;
+
+    todolist.appendChild(taskDiv);
 }
+
+// function renderTask(task) {
+//     const cssClass = task.done ? 'todo-item--done' : 'todo-item'
+//     const taskHTML = `
+//     <div id="${task.id}" class="${cssClass}">
+//         ${task.text}
+//         <div class="todo-item__buttons">
+//         <button class="buttons__delete_button" type="button" data-action="delete">Удалить</button>
+//         <button class="buttons__done_button" type="button" data-action="done">Готово</button>
+//         </div>
+//     </div>
+// `;
+//     todolist.insertAdjacentHTML("beforeend", taskHTML);
+// }
 
 function generateUniqueId() {
     const timestampPart = Date.now().toString(36);
