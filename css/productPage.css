@@ -24,15 +24,29 @@
 
 table { 
     display: grid;
-    grid-template-columns: minmax(150px, 1.33fr) minmax(150px, 2.33fr);
+    grid-template-columns: repeat(2 ,1fr);
     margin-top: 15px;
-    width: 100%;
+    width: 50%;
     border-collapse: collapse;
+    font-weight: 100;
+}
+
+table thead, tbody, tr {
+    display: contents;
+}
+
+.table__honest th{ 
+    font-weight: 700;
+    background-color: #383838;
+}
+
+.table__honest td{ 
+    font-weight: 700;
+    background-color: #383838;
 }
 
 .table-white { 
     margin-top: 15px;
-    width: 100%;
     border-collapse: collapse;
     border-color: white;
     color: white;
@@ -44,16 +58,11 @@ table {
     background: #383838;
 }
 
-th, td {
+/* th, td {
     padding: 10px;
     border: 1px solid #ddd;
     text-align: left;
-}
-
- .table__honest { 
-    font-weight: 700;
-    background: lightgray;
-}
+} */
 
 .blockBlack__preview {
     color: white;
