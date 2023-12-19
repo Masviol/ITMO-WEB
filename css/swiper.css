@@ -13,8 +13,8 @@ body {
 }
 
 .swiper {
-  width: 30%;
-  height: 500px;
+  width: minmax(350px, 670px);
+  height: minmax(350px, 670px);
   padding: 50px;
   margin-bottom: 30px;
 }
