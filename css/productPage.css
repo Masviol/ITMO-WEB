@@ -44,13 +44,6 @@ table {
     background: #383838;
 }
 
-@media (max-width: 600px) {
-    table {
-        grid-template-columns: 1fr;
-    }
-}
-
-
 th, td {
     padding: 10px;
     border: 1px solid #ddd;
