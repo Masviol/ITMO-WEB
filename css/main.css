@@ -30,9 +30,16 @@ header {
     }
   }
 
+  @media screen and (max-width: 450px) {
+    header nav ul{
+      flex-direction: column;
+    }
+  }
+
   @media screen and (max-width: 700px) {
-    footer {
+    .footer__menu{
         font-size: 0.5rem;
+        flex-direction: column;
     }
   }
 
@@ -107,8 +114,13 @@ main {
     font-weight: 700;
     font-size: 3rem;
     color: white;
-    margin: 0;
-    
+    margin: 0;    
+}
+
+@media screen and (max-width: 500px){
+    .blockBlack__productName { 
+        font-size: 2rem;
+    }
 }
 
 .blockBlack__tagline { 
@@ -118,6 +130,12 @@ main {
     margin: 9px 0;
 }
 
+@media screen and (max-width: 500px){
+    .blockBlack__tagline { 
+        font-size: 1rem;
+    }
+}
+
 .blockWhite__productName { 
     font-weight: 700;
     font-size: 3rem;
@@ -125,11 +143,27 @@ main {
     margin: 0;
 }
 
+@media screen and (max-width: 500px){
+    .blockWhite__productName { 
+        font-size: 2rem;
+    }
+}
+
 .blockWhite__tagline { 
     font-weight: 100;
     font-size: 1.5rem;
     color: black;
     margin: 9px 0;
+}
+
+@media screen and (max-width: 500px){
+    .blockWhite__tagline { 
+        font-size: 1rem;
+    }
+
+    .sonyfe50mm { 
+        top: 1005px;
+    }
 }
 
 .learnMore { 
@@ -167,7 +201,6 @@ main {
 
 footer { 
     width: auto;
-    height: 107px;
     background: rgb(229, 229, 229);
     margin: 0;
     margin-bottom: 0;
@@ -222,6 +255,12 @@ blockquote {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 500px){
+    .sonyfe50mm { 
+        top: 15px;
+    }
 }
 
 .blockWhite__img { 
