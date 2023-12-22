@@ -19,6 +19,13 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 500px){
+  .swiper { 
+    height: 100px;
+    width: 100px;
+  }
+}
+
 .swiper-slide img { 
   display: block;
   width: 100%;
