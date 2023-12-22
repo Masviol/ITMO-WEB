@@ -26,6 +26,7 @@ header {
 @media screen and (max-width: 700px) {
     header {
       flex-direction: column;
+      padding: 1% 8%
     }
   }
 
@@ -232,7 +233,7 @@ blockquote {
 }
 .discript { 
     font-size: 1rem; /* Размер шрифта */
-    line-height: 1.5; /* Высота строки *//* Семейство используемых шрифтов */
+    line-height: 1.5; /* Высота строки */
     font-weight: bold; /* Насыщенность шрифта */
     text-align: center; /* Выравнивание текста */
     background-color: #f5f5f5; /* Фон текста */
