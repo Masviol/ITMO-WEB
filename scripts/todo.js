@@ -59,8 +59,9 @@ function deleteTask(event) {
     checkEmtyList();
 }
 
-function doneTask() {
+function doneTask(event) {
     if (event.target.dataset.action === 'done') {
+        console.log(event);
         const parentNode = event.target.closest('.todo-item');
         parentNode.classList.add('todo-item--done');
 

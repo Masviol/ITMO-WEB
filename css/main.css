@@ -23,6 +23,18 @@ header {
     padding: 0 8%;
 }
 
+@media screen and (max-width: 700px) {
+    header {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    footer {
+        font-size: 0.5rem;
+    }
+  }
+
 header .logo { 
     font-size: 1.2rem;
     color: white;
@@ -66,7 +78,7 @@ header nav ul li a:hover {
     color: white;
 }
 
-.active a {
+.active {
     font-weight: bolder;
 }
 
@@ -211,3 +223,27 @@ blockquote {
     100% { transform: rotate(360deg); }
 }
 
+.blockWhite__img { 
+    width: 50%;
+    display: block;
+    margin: auto;
+    box-shadow: 2px 3px 3px rgba(88, 88, 88, 0.3);
+    margin-bottom: 150px;
+}
+.discript { 
+    font-size: 1rem; /* Размер шрифта */
+    line-height: 1.5; /* Высота строки *//* Семейство используемых шрифтов */
+    font-weight: bold; /* Насыщенность шрифта */
+    text-align: center; /* Выравнивание текста */
+    background-color: #f5f5f5; /* Фон текста */
+    color: #333; /* Цвет текста */
+    text-indent: 20px; /* Красная строка */
+    word-spacing: 10px; /* Пробелы между словами */
+    letter-spacing: 1px; /* Пробелы между буквами */
+    font-style: italic; /* Стилизация переформатированного текста */
+    text-decoration: underline; /* Подчеркивание текста */
+    text-transform: uppercase;
+}
+.indent { 
+    text-indent: 150px; /* Красная строка */
+}
